@@ -3,16 +3,20 @@ import {Link} from 'react-router-dom'
 import './index.css'
 
 const Header = () => (
-  <nav>
-    <ul>
-      <Link to="/">
-        <li>Home</li>
-      </Link>
-      <Link to="/about">
-        <li>About</li>
-      </Link>
+  <div className="header">
+    <ul className="nav-menu">
+      <li>
+        <Link to="/" className="nav-link">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link to="/about" className="nav-link">
+          About
+        </Link>
+      </li>
     </ul>
-  </nav>
+  </div>
 )
 
 export default Header
